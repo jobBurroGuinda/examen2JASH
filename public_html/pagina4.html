@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            section{
+                font-family: 'Arial';
+                margin-top: 100px;
+                margin: 100px 150px 100px 80px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            h1{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            .justificado{
+                text-align: justify;
+            }
+            .titulo{
+                text-align: center;
+                color: rgb(108, 19, 43);
+            }
+            .negrita{
+                font-weight: bold;
+            }
+            #primer{
+                font-style: italic;
+                text-align: center;
+                font-size: 9pt;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p><a href="examen2_jash.html">Home</a></p>
+            <p><a href="pagina1.html">Página 1</a></p>
+            <p><a href="pagina2.html">Página 2</a></p>
+            <p><a href="pagina3.html">Página 3</a></p>
+        </div>
+        <section>
+            <h1>CATÁLOGO DE ARTE</h1>
+            <p class="negrita">Introduce los términos de búsqueda:</p>
+            <form action="pagina.jsp" method="post">
+                <center>
+                    <table border="0px" id="tabla1">
+                        <thead>
+                            <tr>
+                                <th>OBRA</th>
+                                <th>TIPO</th>
+                                <th>DISPONIBILIDAD</th>
+                                <th>ESTILO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label>Título:</label><input type="text"></td>
+                                <td><label><input type="checkbox" value="1" name="tipo">Escultura</label></td>
+                                <td><label><input type="radio" value="1" name="disponibilidad">Museo / Acceso público</label></td>
+                                <td>
+                                    <select name="estilo">
+                                        <option value="1">Clásico</option>
+                                        <option value="2">Deportivo</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Autor:</label><input type="text"></td>
+                                <td><label><input type="checkbox" value="2" name="tipo">Arquitectura</label></td>
+                                <td><label><input type="radio" value="2" name="disponibilidad">Colección privada</label></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><label><input type="checkbox" value="3" name="tipo">Pintura</label></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+                <br><!-- comment -->
+                <label>Háganos saber sus sugerencias:</label>
+                <textarea name="area" placeholder="Me gustaría indicar que..."></textarea>
+                <br>
+                <center><input value="Buscar" type="submit"></center>
+            </form>
+        </section>
+    </body>
+</html>
